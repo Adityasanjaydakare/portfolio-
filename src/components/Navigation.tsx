@@ -53,7 +53,7 @@ export const Navigation = () => {
             }}
           >
             <Terminal className="w-6 h-6 text-primary" />
-            <span className="text-gradient">Alex</span>
+            <span className="text-gradient">ll_.aadi._ll</span>
           </motion.a>
 
           {/* Desktop navigation */}
