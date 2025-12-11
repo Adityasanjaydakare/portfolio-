@@ -54,7 +54,7 @@ export const Hero = () => {
 
       {/* Floating blobs */}
       <motion.div
-        className="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan/20 rounded-full blur-3xl"
+        className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue/20 rounded-full blur-3xl"
         animate={{
           x: [0, 50, 0],
           y: [0, -30, 0],
@@ -80,7 +80,7 @@ export const Hero = () => {
         }}
       />
       <motion.div
-        className="absolute top-1/2 right-1/3 w-64 h-64 bg-pink/10 rounded-full blur-3xl"
+        className="absolute top-1/2 right-1/3 w-64 h-64 bg-indigo/15 rounded-full blur-3xl"
         animate={{
           x: [0, 30, 0],
           y: [0, -50, 0],
@@ -121,7 +121,7 @@ export const Hero = () => {
         >
           <span className="text-foreground">Hi, I'm </span>
           <span className="text-gradient inline-flex items-center gap-3">
-            Alex
+            Aditya Dakare
             <motion.span
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -178,7 +178,7 @@ export const Hero = () => {
             {/* Animated gradient background */}
             <div className="absolute inset-0 bg-gradient-primary opacity-100 group-hover:opacity-90 transition-opacity" />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-            <span className="relative flex items-center gap-2 text-primary-foreground">
+            <span className="relative flex items-center gap-2 text-white font-semibold">
               <Rocket className="w-5 h-5" />
               See Projects
             </span>
@@ -188,10 +188,10 @@ export const Hero = () => {
             onClick={scrollToContact}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="group relative px-8 py-4 rounded-xl font-semibold text-lg border-gradient overflow-hidden"
+            className="group relative px-8 py-4 rounded-xl font-semibold text-lg border-2 border-blue/50 hover:border-blue bg-transparent overflow-hidden transition-all"
           >
-            <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-10 transition-opacity" />
-            <span className="relative flex items-center gap-2 text-foreground">
+            <div className="absolute inset-0 bg-blue/5 group-hover:bg-blue/10 transition-opacity" />
+            <span className="relative flex items-center gap-2 text-blue hover:text-blue/90">
               <Mail className="w-5 h-5" />
               Contact Me
             </span>

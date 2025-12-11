@@ -6,53 +6,64 @@
 
 @layer base {
   :root {
-    --background: 222 47% 5%;
-    --foreground: 210 40% 98%;
+    /* Modern Deep Blue Background */
+    --background: 220 40% 8%;
+    --foreground: 210 30% 95%;
 
-    --card: 222 47% 8%;
-    --card-foreground: 210 40% 98%;
+    /* Card with subtle blue tint */
+    --card: 220 35% 12%;
+    --card-foreground: 210 30% 95%;
 
-    --popover: 222 47% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 35% 12%;
+    --popover-foreground: 210 30% 95%;
 
-    --primary: 186 100% 50%;
-    --primary-foreground: 222 47% 5%;
+    /* Vibrant Blue Primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 30% 95%;
 
-    --secondary: 270 100% 65%;
-    --secondary-foreground: 210 40% 98%;
+    /* Rich Purple Secondary */
+    --secondary: 270 80% 65%;
+    --secondary-foreground: 210 30% 95%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    /* Muted tones */
+    --muted: 220 25% 18%;
+    --muted-foreground: 215 20% 70%;
 
-    --accent: 186 100% 50%;
-    --accent-foreground: 222 47% 5%;
+    /* Accent - Electric Blue */
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 30% 95%;
 
+    /* Destructive - Coral Red */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 210 30% 95%;
 
-    --border: 217 33% 20%;
-    --input: 217 33% 17%;
-    --ring: 186 100% 50%;
+    /* Borders */
+    --border: 220 30% 20%;
+    --input: 220 25% 18%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
-    /* Custom colors */
-    --cyan: 186 100% 50%;
-    --purple: 270 100% 65%;
+    /* Custom colors - Modern Solid Palette */
+    --cyan: 195 100% 55%;
+    --purple: 270 80% 65%;
     --blue: 217 91% 60%;
-    --pink: 330 100% 65%;
-    --green: 142 76% 50%;
-    --orange: 25 95% 53%;
+    --pink: 330 75% 65%;
+    --green: 142 70% 55%;
+    --orange: 25 95% 55%;
+    --red: 0 84% 60%;
+    --indigo: 250 85% 65%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--cyan)), hsl(var(--purple)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--purple)), hsl(var(--pink)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--blue)), hsl(var(--cyan)));
+    /* Gradients - Clean and Modern */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--blue)), hsl(var(--purple)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--purple)), hsl(var(--indigo)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--cyan)), hsl(var(--blue)));
 
-    /* Glow effects */
-    --glow-cyan: 0 0 60px hsl(var(--cyan) / 0.5);
-    --glow-purple: 0 0 60px hsl(var(--purple) / 0.5);
-    --glow-mixed: 0 0 80px hsl(var(--cyan) / 0.3), 0 0 120px hsl(var(--purple) / 0.3);
+    /* Glow effects - Subtle and elegant */
+    --glow-cyan: 0 0 40px hsl(var(--cyan) / 0.4);
+    --glow-purple: 0 0 40px hsl(var(--purple) / 0.4);
+    --glow-blue: 0 0 40px hsl(var(--blue) / 0.4);
+    --glow-mixed: 0 0 60px hsl(var(--blue) / 0.3), 0 0 80px hsl(var(--purple) / 0.3);
 
     /* Fonts */
     --font-sans: 'Space Grotesk', system-ui, sans-serif;
@@ -217,14 +228,14 @@
 }
 
 .aurora::before {
-  background: radial-gradient(circle, hsl(var(--cyan) / 0.6) 0%, transparent 50%);
+  background: radial-gradient(circle, hsl(var(--blue) / 0.5) 0%, transparent 50%);
   top: -50%;
   left: -25%;
   animation-delay: 0s;
 }
 
 .aurora::after {
-  background: radial-gradient(circle, hsl(var(--purple) / 0.6) 0%, transparent 50%);
+  background: radial-gradient(circle, hsl(var(--purple) / 0.5) 0%, transparent 50%);
   bottom: -50%;
   right: -25%;
   animation-delay: -7s;

@@ -1,73 +1,140 @@
-# Welcome to your Lovable project
+# Radiant DevOps Portfolio
 
-## Project info
+A modern, beautiful portfolio website showcasing DevOps expertise with a solid, attractive color scheme.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- 🎨 Modern, attractive solid color scheme
+- 🚀 Fully functional backend API
+- ⚡ Fast React frontend with Vite
+- 🎭 Smooth animations with Framer Motion
+- 📱 Fully responsive design
+- 🎯 Clean, professional UI
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+### Frontend
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- shadcn/ui components
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Backend
+- Express.js
+- Node.js
+- CORS enabled
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
+- Node.js 18+ and npm
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd radiant-devops-portfolio-main
+```
 
-Follow these steps:
+2. Install frontend dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Install backend dependencies:
+```bash
+cd server
+npm install
+cd ..
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Running the Application
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Option 1: Run Frontend and Backend Separately
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+**Terminal 1 - Frontend:**
+```bash
+npm run dev
+```
+Frontend will run on `http://localhost:8080`
+
+**Terminal 2 - Backend:**
+```bash
+cd server
+npm run dev
+```
+Backend will run on `http://localhost:3001`
+
+### Option 2: Run Both Together (Windows PowerShell)
+```powershell
+# Start backend in background
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd server; npm run dev"
+
+# Start frontend
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Color Scheme
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The portfolio uses a modern, attractive solid color palette:
 
-**Use GitHub Codespaces**
+- **Primary**: Vibrant Blue (`#4A90E2`)
+- **Secondary**: Rich Purple (`#9B59B6`)
+- **Accent**: Electric Blue (`#3498DB`)
+- **Background**: Deep Blue (`#0F172A`)
+- **Cards**: Dark Blue with subtle tint (`#1E293B`)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Additional accent colors:
+- Cyan, Green, Orange, Pink, Red, Indigo
 
-## What technologies are used for this project?
+## API Endpoints
 
-This project is built with:
+The backend provides the following endpoints:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `GET /api/health` - Health check
+- `GET /api/portfolio` - Portfolio information
+- `GET /api/projects` - List of projects
+- `GET /api/skills` - Skills categories
+- `POST /api/contact` - Contact form submission
 
-## How can I deploy this project?
+See `server/README.md` for detailed API documentation.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Building for Production
 
-## Can I connect a custom domain to my Lovable project?
+### Frontend
+```bash
+npm run build
+```
 
-Yes, you can!
+### Backend
+The backend runs directly with Node.js. For production, consider using PM2 or similar process managers.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Frontend
+The frontend can be deployed to any static hosting service (Vercel, Netlify, etc.) or served via the Dockerfile.
+
+### Backend
+Deploy the backend to any Node.js hosting service (Heroku, Railway, Render, etc.).
+
+## Project Structure
+
+```
+radiant-devops-portfolio-main/
+├── src/                 # Frontend source code
+│   ├── components/     # React components
+│   ├── pages/         # Page components
+│   └── index.css      # Global styles with color scheme
+├── server/             # Backend API server
+│   ├── index.js       # Express server
+│   └── package.json   # Backend dependencies
+├── public/            # Static assets
+└── package.json       # Frontend dependencies
+```
+
+## License
+
+MIT

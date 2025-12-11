@@ -57,6 +57,8 @@ export default {
         pink: "hsl(var(--pink))",
         green: "hsl(var(--green))",
         orange: "hsl(var(--orange))",
+        red: "hsl(var(--red))",
+        indigo: "hsl(var(--indigo))",
       },
       borderRadius: {
         lg: "var(--radius)",

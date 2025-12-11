@@ -43,7 +43,7 @@ const stepColors = {
   cyan: {
     bg: "from-cyan/20 to-cyan/5",
     border: "border-cyan/40 hover:border-cyan",
-    glow: "group-hover:shadow-[0_0_40px_hsl(186_100%_50%/0.4)]",
+    glow: "group-hover:shadow-[0_0_40px_hsl(195_100%_55%/0.4)]",
     icon: "text-cyan",
     pulse: "bg-cyan",
   },
@@ -57,21 +57,21 @@ const stepColors = {
   purple: {
     bg: "from-purple/20 to-purple/5",
     border: "border-purple/40 hover:border-purple",
-    glow: "group-hover:shadow-[0_0_40px_hsl(270_100%_65%/0.4)]",
+    glow: "group-hover:shadow-[0_0_40px_hsl(270_80%_65%/0.4)]",
     icon: "text-purple",
     pulse: "bg-purple",
   },
   green: {
     bg: "from-green/20 to-green/5",
     border: "border-green/40 hover:border-green",
-    glow: "group-hover:shadow-[0_0_40px_hsl(142_76%_50%/0.4)]",
+    glow: "group-hover:shadow-[0_0_40px_hsl(142_70%_55%/0.4)]",
     icon: "text-green",
     pulse: "bg-green",
   },
   orange: {
     bg: "from-orange/20 to-orange/5",
     border: "border-orange/40 hover:border-orange",
-    glow: "group-hover:shadow-[0_0_40px_hsl(25_95%_53%/0.4)]",
+    glow: "group-hover:shadow-[0_0_40px_hsl(25_95%_55%/0.4)]",
     icon: "text-orange",
     pulse: "bg-orange",
   },
@@ -103,9 +103,9 @@ export const Pipeline = () => {
         {/* Pipeline visualization */}
         <div className="relative">
           {/* Connecting line */}
-          <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-cyan via-purple to-orange hidden lg:block -translate-y-1/2 z-0">
+          <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue via-purple to-orange hidden lg:block -translate-y-1/2 z-0">
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-cyan via-purple to-orange"
+              className="absolute inset-0 bg-gradient-to-r from-blue via-purple to-orange"
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}

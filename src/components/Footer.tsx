@@ -19,7 +19,7 @@ export const Footer = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-muted/30 to-transparent" />
 
       {/* Decorative blobs */}
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-cyan/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue/10 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple/10 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-4xl mx-auto relative">
@@ -44,7 +44,7 @@ export const Footer = () => {
             href="mailto:hello@example.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-primary text-primary-foreground font-semibold text-lg transition-all duration-300 hover:shadow-lg glow-cyan"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-primary text-white font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue/50"
           >
             <Mail className="w-5 h-5" />
             Get In Touch
@@ -91,14 +91,14 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="text-sm text-muted-foreground flex items-center gap-1"
           >
-            © {new Date().getFullYear()} Alex. Made with{" "}
+            © {new Date().getFullYear()} Aditya Dakare. Made with{" "}
             <motion.span
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 1, repeat: Infinity }}
             >
               <Heart className="w-4 h-4 text-pink inline" fill="currentColor" />
             </motion.span>{" "}
-            and lots of coffee
+            and lots of Tea
           </motion.p>
 
           {/* Scroll to top */}

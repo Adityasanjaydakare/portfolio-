@@ -88,13 +88,15 @@ const skills = {
 };
 
 const colorClasses = {
-  cyan: "from-cyan/20 to-cyan/5 border-cyan/30 hover:border-cyan/60 hover:shadow-[0_0_30px_hsl(186_100%_50%/0.3)]",
-  purple: "from-purple/20 to-purple/5 border-purple/30 hover:border-purple/60 hover:shadow-[0_0_30px_hsl(270_100%_65%/0.3)]",
+  cyan: "from-cyan/20 to-cyan/5 border-cyan/30 hover:border-cyan/60 hover:shadow-[0_0_30px_hsl(195_100%_55%/0.3)]",
+  purple: "from-purple/20 to-purple/5 border-purple/30 hover:border-purple/60 hover:shadow-[0_0_30px_hsl(270_80%_65%/0.3)]",
   blue: "from-blue/20 to-blue/5 border-blue/30 hover:border-blue/60 hover:shadow-[0_0_30px_hsl(217_91%_60%/0.3)]",
-  green: "from-green/20 to-green/5 border-green/30 hover:border-green/60 hover:shadow-[0_0_30px_hsl(142_76%_50%/0.3)]",
-  orange: "from-orange/20 to-orange/5 border-orange/30 hover:border-orange/60 hover:shadow-[0_0_30px_hsl(25_95%_53%/0.3)]",
-  pink: "from-pink/20 to-pink/5 border-pink/30 hover:border-pink/60 hover:shadow-[0_0_30px_hsl(330_100%_65%/0.3)]",
+  green: "from-green/20 to-green/5 border-green/30 hover:border-green/60 hover:shadow-[0_0_30px_hsl(142_70%_55%/0.3)]",
+  orange: "from-orange/20 to-orange/5 border-orange/30 hover:border-orange/60 hover:shadow-[0_0_30px_hsl(25_95%_55%/0.3)]",
+  pink: "from-pink/20 to-pink/5 border-pink/30 hover:border-pink/60 hover:shadow-[0_0_30px_hsl(330_75%_65%/0.3)]",
 };
+<｜tool▁calls▁begin｜><｜tool▁call▁begin｜>
+read_file
 
 const iconColorClasses = {
   cyan: "text-cyan",

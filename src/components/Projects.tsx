@@ -9,7 +9,7 @@ const projects = [
     tags: ["Kubernetes", "Terraform", "ArgoCD", "Prometheus"],
     github: "#",
     demo: "#",
-    color: "cyan",
+    color: "blue",
   },
   {
     title: "Zero-Downtime CI/CD Pipeline",
@@ -78,6 +78,7 @@ const colorClasses = {
   orange: "from-orange/30 to-transparent border-orange/30 hover:border-orange/60",
   pink: "from-pink/30 to-transparent border-pink/30 hover:border-pink/60",
   blue: "from-blue/30 to-transparent border-blue/30 hover:border-blue/60",
+  red: "from-red/30 to-transparent border-red/30 hover:border-red/60",
 };
 
 const tagColors = {
@@ -87,7 +88,10 @@ const tagColors = {
   orange: "bg-orange/20 text-orange border-orange/30",
   pink: "bg-pink/20 text-pink border-pink/30",
   blue: "bg-blue/20 text-blue border-blue/30",
+  red: "bg-red/20 text-red border-red/30",
 };
+<｜tool▁calls▁begin｜><｜tool▁call▁begin｜>
+read_file
 
 export const Projects = () => {
   return (
